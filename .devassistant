@@ -1,0 +1,17 @@
+dependencies:
+- rpm:
+  - python${py3}
+- if $venv:
+  - rpm:
+    - python-virtualenv
+- else:
+  - rpm:
+    - python-setuptools
+devassistant_version: 0.9.1
+original_kwargs:
+  github: !!python/unicode 'bookwar'
+  name: !!python/unicode '/home/alpha/Work/Repos/tlchart'
+  venv: !!python/unicode 'venv'
+project_type:
+- python
+- lib
